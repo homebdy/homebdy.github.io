@@ -1,15 +1,15 @@
-title: "Affiliates"
-email: wowthemesnet@gmail.com
-timezone: UTC
-baseurl: "/affiliates-jekyll-theme"
+title: "DogFoot"
+email: rladuswls0104@gmail.com
+timezone: ko-kr
+baseurl: "/"
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
-author: Sal
+author: homebdy
 paginate: 30
 disqus: 'demowebsite'
-locale: en_us
-lang: en_us
+locale: ko-kr
+lang: ko-kr
 feed_items: 10
 feed_update_period: daily
 feed_update_frequency: 1
@@ -29,17 +29,15 @@ authors:
     display_name: homebdy
     avatar: 'assets/images/sal.png'
     email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
+    twitter: https://twitter.com/dogfootza
     description: Hello World!
   john:
     name: Yeom-Jin Kim
     display_name: homebdy
     avatar: 'assets/images/profile_image.png'
     email: rladuswls0104@gmail.com
-    web: https://www.wowthemes.net/category/jekyll-themes/
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here. You are currently previewing Affiliates theme demo, a Jekyll template compatible with Github pages."
+    twitter: https://twitter.com/dogfootza
+    description: ""
 
 # Social
 social:
