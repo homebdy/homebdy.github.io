@@ -2,7 +2,7 @@ title: "Homebdy"
 email: rladuswls0104@gmail.com
 timezone: UTC
 url: "https://homebdy.github.io"
-baseurl: "/homebdy"
+baseurl: ""
 permalink: "/:title/"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/favicon.ico'
