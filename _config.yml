@@ -25,20 +25,13 @@ ganalytics: UA-113961478-1
 
 # Authors
 authors:
-  sal:
-    name: Yeon-jin Kim
-    display_name: homebdy
-    avatar: 'assets/images/background.png'
-    email: rladuswls0104@gmail.com
-    web: https://twitter.com/dogfoot
-    twitter: https://twitter.com/dogfootza
-    description: "개발에 이제 막 발 담근 사람"
+
   yj:
     name: yj
     display_name: homebdy
-    avatar: 'assets/images/background.png'
+    avatar: 'assets/images/profile_image.jpg'
     email: rladuswls0104@gmail.com
-    web: https://twitter.com/dogfoot
+    web: https://twitter.com/dogfootza
     twitter: https://twitter.com/dogfootza
     description: "개발에 이제 막 발 담근 사람. 개발에 이제 막 발 담근 사람. 개발에 이제 막 발 담근 사람. 개발에 이제 막 발 담근 사람."
 
@@ -47,7 +40,7 @@ authors:
 social:
   instagram: https://www.instagram.com/bootstrapstarter/
   facebook: https://www.facebook.com/bootstrapstartercom-346329609045284
-  twitter: https://twitter.com/dogfoot
+  twitter: https://twitter.com/dogfootza
 
 # Plugins
 plugins: 
