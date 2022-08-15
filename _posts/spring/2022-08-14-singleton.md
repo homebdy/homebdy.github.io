@@ -2,6 +2,7 @@
 layout: post
 title:  "싱글톤 컨테이너"
 author: yj
+category:  Spring🌱
 categories: [ JAVA, SPRING ]
 ---
 
@@ -51,8 +52,9 @@ categories: [ JAVA, SPRING ]
 - 문제 상황
     1. UserA, UserB 존재 & price를 공유 필드라 가정
     2. UserA가 10,000원 주문 후 B가 20,000원을 주문한다.
-    3. 그 후 UserA의 price를 조회하면 20,000원으로 조회가 된다..
-    ∴ 스프링은 무조건 stateless 상태로 설계해야 한다!
+    3. 그 후 UserA의 price를 조회하면 20,000원으로 조회가 된다..<br/>
+    
+∴ 스프링은 무조건 stateless 상태로 설계해야 한다!
 
 ### <a href="#">@Configuration과 싱글톤</a>
 - 스프링에서는 바이트코드를 조작하는 라이브러리를 사용함.

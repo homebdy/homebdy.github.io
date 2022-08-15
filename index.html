@@ -38,32 +38,34 @@ background: '/img/bg-index.jpg'
 ================================================== -->
 <section class="row">
 
-  <div class="col-sm-4">
-    <ul>
-    
+  <!-- 카테고리위해 추가 -->
+  <div class="col-sm-3">
+      <h3>Categories</h3>
+      <hr style="color:#212121; border-style:solid; border-top-width: 2px">
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
           {% if node.layout == "category" %}
-            <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
-            href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+            <a class="category-link {% if page.url == node.url %} active{% endif %}"
+            href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+            <br/>
           {% endif %}
         {% endif %}
       {% endfor %}
-      
-    </ul>
   </div>
-
-  <div class="col-sm-8">
+<!-- 카테고리위해 추가 끝 -->
+ 
+  <div class="col-sm-9">
     <div class="row">
       {% for post in paginator.posts %}
       {% unless post.featured == true %}
-      <div class="col-md-6 mb-5">
+      <div class="col-md-6 mb-4">
         {% include postbox.html %}
       </div>
       {% endunless %}
       {% endfor %}
     </div>
+    <br/>
     <!-- Pagination -->
     <div class="bottompagination">
       <span class="navigation" role="navigation">

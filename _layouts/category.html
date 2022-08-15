@@ -1,18 +1,28 @@
 ---
 layout: default
 ---
-<ul class="posts-list">
-  
-  {% assign category = page.category | default: page.title %}
-  {% for post in site.categories[category] %}
-    <li>
-      <h3>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-        <small>{{ post.date | date_to_string }}</small>
-      </h3>
-    </li>
-  {% endfor %}
-  
-</ul>
+
+{% assign category = page.category | default: page.title %}
+<br/>
+<h2> {{ category }}</h2>
+<hr style="color:black; border-style:solid; border-top-width: 3px;">
+<br/>
+
+<section class="row">
+    <div class="col-sm-12">
+        <div class="row">
+            
+            {% for post in site.categories[category] %}
+                <div class="col-md-6 mb-5">
+                    {% include postbox.html %}
+                </div>
+            {% endfor %}
+        </div>
+        
+        <div class="bottompagination">
+            <span class="navigation" role="navigation">
+                {% include pagination.html %}
+            </span>
+        </div>
+    </div>
+</section>

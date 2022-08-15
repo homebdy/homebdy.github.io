@@ -9,14 +9,26 @@ post_class: post-template
 ================================================== -->
 
 	<div class="row">
-		
-
+    <div class="col-sm-2">
+      <br/><br/><br/>
+      <h3>Categories</h3>
+      <hr style="color:#212121; border-style:solid; border-top-width: 2px">
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "category" %}
+            <a class="category-link {% if page.url == node.url %} active{% endif %}"
+            href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a>
+            <br/>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+  </div>
 		<!-- Post -->        
         {% assign author = site.authors[page.author] %}
-		<div class="col-sm-8">
-            <br/>
+		<div class="col-sm-10">
 			<div class="mainheading">             
-                
+                <br/>
                 <!-- Post Categories -->
                 <div class="after-post-tags">
                     <ul class="tags">
@@ -99,14 +111,8 @@ post_class: post-template
 
 		</div>
 		<!-- End Post -->
-
-
         
-
-		<!-- Sidebar -->
-        <div class="col-sm-4">
-            {% include sidebar.html %}
-            </div>
+		
         
         
 
