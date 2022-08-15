@@ -10,7 +10,7 @@ background: '/img/bg-index.jpg'
 <div class="rounded mb-5 hero">
   <div class="row align-items-center justify-content-between">
     <div class="col-md-6">
-      <h1 class="font-weight-bold mb-4 serif-font">컴공생의 개발 블로그</h1>
+      <h1 class="font-weight-bold mb-4 Noto">컴공생의 개발 블로그</h1>
       <p class="lead mb-4">Hello!</p>
       <a href="{{site.baseurl}}/about" class="btn btn-dark text-white px-5 btn-lg">About me</a>
     </div>
@@ -37,6 +37,23 @@ background: '/img/bg-index.jpg'
 <!-- Posts List with Sidebar (except featured)
 ================================================== -->
 <section class="row">
+
+  <div class="col-sm-4">
+    <ul>
+    
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "category" %}
+            <li><a class="category-link {% if page.url == node.url %} active{% endif %}"
+            href="{{ site.baseurl }}{{ node.url }}">{{ node.title }}</a></li>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      
+    </ul>
+  </div>
+
   <div class="col-sm-8">
     <div class="row">
       {% for post in paginator.posts %}
@@ -54,7 +71,5 @@ background: '/img/bg-index.jpg'
       </span>
     </div>
   </div>
-  <div class="col-sm-4">
-    {% include sidebar.html %}
-  </div>
+  
 </section>
