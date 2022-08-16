@@ -1,0 +1,23 @@
+---
+title: "Tags"
+layout: default
+permalink: "/tags.html"
+---
+{% for tag in site.tags %}
+<h4 class="mt-5 mb-4 pb-2 border-bottom" id="{{ tag[0] | replace: replace: ' ', '-' }}"><span class="text-capitalize small font-weight-bold">In "{{ tag[0] }}"</span></h4>
+
+<div class="row">
+    {% assign pages_list = tag[1] %}
+    {% for post in pages_list %}
+    {% if post.title != null %}
+    {% if group == null or group == post.group %}
+        <div class="col-md-4 mb-5">
+            {% include postbox.html %}
+        </div>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
+</div>
+{% endfor %}

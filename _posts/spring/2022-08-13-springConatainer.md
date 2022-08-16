@@ -3,7 +3,7 @@ layout: post
 title:  "스프링 컨테이너와 스프링 빈"
 author: yj
 category: [ Spring🌱 ]
-categories: [ JAVA, SPRING ]
+tags: [ JAVA, SPRING ]
 ---
 ### <a href="#">스프링 컨테이너 생성</a>
 - 스프링 컨테이너가 생성되는 과정

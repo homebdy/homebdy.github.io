@@ -21,7 +21,7 @@ body {
     background:#fff;
     font-size:17px;
     transition: all 200ms linear;
-    font-family: "PT Sans",sans-serif , "Noto Sans KR";
+    font-family: "PT Sans",sans-serif , 'Noto Sans KR';
     line-height:1.7;
     color: #333;
     overflow-x:hidden;
@@ -29,8 +29,9 @@ body {
     
 }
 .serif-font {
-    font-family:PT Serif Noto;
+    font-family:'Noto Sans KR' Serif;
 }
+
 @media (max-width: 1366px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
         width:90%;

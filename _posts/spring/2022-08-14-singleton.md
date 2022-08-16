@@ -3,7 +3,7 @@ layout: post
 title:  "싱글톤 컨테이너"
 author: yj
 category:  Spring🌱
-categories: [ JAVA, SPRING ]
+tags: [ JAVA, SPRING ]
 ---
 
 ### <a href="#">웹 애플리케이션과 싱글톤</a>

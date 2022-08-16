@@ -3,7 +3,7 @@ layout: post
 title:  "스프링 빈 설정 메타 정보"
 author: yj
 category: [ Spring🌱 ]
-categories: [ JAVA, SPRING ]
+tags:  [ JAVA, SPRING ]
 ---
 
 ### <a href="#">BeanDefinition: 스프링 빈 설정 메타 정보</a>
