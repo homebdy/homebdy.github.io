@@ -11,7 +11,8 @@ code {
   font-size: $code-font-size;
   color: $code-color;
   word-break: break-word;
-
+  background-color: #eceaeaf6;
+  border-radius: 5px;
   // Streamline the style when inside anchors to avoid broken underline and more
   a > & {
     color: inherit;
@@ -40,7 +41,7 @@ pre {
   display: block;
   font-size: $code-font-size;
   color: $pre-color;
-  background-color: #E7E7E7;
+  background-color: #eceaeaf6;
   // Account for some code outputs that place code tags in pre tags
   code {
     font-size: inherit;
