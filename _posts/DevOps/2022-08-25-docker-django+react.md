@@ -2,7 +2,7 @@
 layout: post
 title:  "[Docker] Dockerfile - Django && React"
 author: yj
-category: [ DevOps ]
+category: [ DevOps☁️]
 tags: [ Docker ]
 ---
 
@@ -86,4 +86,4 @@ volumes:
 
 ## 도커 실행
 - `docker=compose up --build` 명령어를 통해 도커를 실행하면 정상적으로 작동한다
-![image](https://files.slack.com/files-pri/T03TCQRSNHW-F03V80AQJGL/image.png)
+![image](https://cdn.discordapp.com/attachments/1006837504554569778/1012376023909806151/unknown.png)
