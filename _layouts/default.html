@@ -25,7 +25,11 @@ gtag('js', new Date());
 gtag('config', '{{site.ganalytics}}');
 </script>
 {% endif %}
-   
+ 
+{% if page.use_math %}
+	{% include mathjax_support.html %}
+{% endif %}
+
 </head>   
     
 {% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}

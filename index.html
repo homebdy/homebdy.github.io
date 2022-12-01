@@ -8,7 +8,7 @@ background: '/img/bg-index.jpg'
 ================================================== -->
 {% if page.url == "/" %} 
 <div class="rounded mb-5 hero">
-  <div class="row align-items-center justify-content-between">
+  <div class="row align-items-right justify-content-between">
     <div class="col-md-6">
       <h1 class="font-weight-bold mb-4 Noto">컴공생의 개발 블로그</h1>
       <p class="lead mb-4">Hello!</p>
@@ -24,6 +24,7 @@ background: '/img/bg-index.jpg'
 <!-- Featured
 ================================================== -->
 <section class="row">
+
   {% for post in site.posts %}
       {% if post.featured == true %}
           <div class="col-md-4 mb-5">
@@ -39,7 +40,7 @@ background: '/img/bg-index.jpg'
 <section class="row">
 
   <!-- 카테고리위해 추가 -->
-  <div class="col-sm-3">
+  <div class="col-sm-3" style="color:#212121; border-right: solid; border-color: rgb(204, 204, 197); border-right-width: 2px;">
       <h3>Categories</h3>
       <hr style="color:#212121; border-style:solid; border-top-width: 2px">
       {% assign pages_list = site.pages %}
@@ -55,6 +56,7 @@ background: '/img/bg-index.jpg'
   </div>
 <!-- 카테고리위해 추가 끝 -->
  
+
   <div class="col-sm-9">
     <div class="row">
       {% for post in paginator.posts %}
